@@ -1,0 +1,24 @@
+{
+	"dbURI":"mongodb://localhost:27017/yallaplaces",
+	"host":"http://196.46.22.132",
+	"ticketValidationInDays": 1,
+	"banDurationInHours": 9,
+	"freeRetriesOnStrictRoutes":5,
+	"timeBetweenPasswordResetsInHours":1,
+	"maxLogins":2,
+	"maxTicketUsagePerHour": 150,
+	"foreignIpBlockInDays":365,
+	"scanBlockInDays": 15,
+	"tempTokenDurationInHours": 0.5,
+	"timeZone": "Africa/Cairo",
+	"mailingServer": {
+		"host": "smtp.hosting.link.net",
+ 		"port": 587,
+		"secure": false, 
+		"auth": {
+			"user":  "eserve@eserve.com.eg", 
+			"pass": "EserveRocks"
+		}		
+	},
+	"emailVerificationUrl": "/verify/email"
+}
