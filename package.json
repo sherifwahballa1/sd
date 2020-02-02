@@ -1,0 +1,47 @@
+{
+  "name": "yallaplaces",
+  "description": "places recommendation platform",
+  "main": "app.js",
+  "version": "2.9.0",
+  "private": true,
+  "scripts": {
+    "test": "mocha test/unit",
+    "self-stress": "mocha test/self-stress",
+    "full-stress": "mocha test/full-stress",
+    "start": "nodemon app.js"
+  },
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
+  "author": "ISEC",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^16.1.8",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.13.3",
+    "cloudinary": "^1.18.1",
+    "cors": "^2.7.1",
+    "cron": "^1.2.1",
+    "express": "^4.17.1",
+    "express-brute": "^1.0.1",
+    "express-brute-redis": "0.0.1",
+    "geoip-lite": "^1.2.1",
+    "helmet": "^3.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.14",
+    "morgan": "^1.8.1",
+    "multer": "^1.4.2",
+    "on-headers": "^1.0.1",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "request": "^2.83.0",
+    "request-ip": "^2.0.2",
+    "telesignsdk": "^2.2.1",
+    "ucheck": "^1.2.9",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.8.0"
+  }
+}

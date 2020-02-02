@@ -1,0 +1,28 @@
+{
+  "apps" : [{
+    "name"               : "eserve-mobile-backend",
+    "script"             : "app.js",
+    "instances"          : 4,
+    "max_memory_restart" : "450M",
+    "exec_mode"          : "cluster",
+    "log_file"           : "./logs/combined.outerr.log",
+    "out_file"           : "./logs/out.log",
+    "error_file"         : "./logs/err.log",
+    "merge_logs"         : true,
+    "log_date_format"    : "YYYY-MM-DD HH:mm Z",
+    "watch"              : false,
+    "trace"              : true,
+    "env"                : {
+      "NODE_ENV": "development"
+    },
+    "env_test"           : {
+      "NODE_ENV": "test"
+    },
+    "env_staging"     : {
+      "NODE_ENV": "staging"
+    },
+    "env_production"     : {
+       "NODE_ENV": "production"
+    }
+  }]
+}
